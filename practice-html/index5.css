@@ -1,0 +1,71 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+header{
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 100px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+#outer{
+    margin: 10px;
+    border: 3px solid black;
+    height: 300px;
+    background-color: bisque;
+}
+.inner{
+    width: 250px;
+    height: 200px;
+    margin: 50px;
+    position: relative;
+    background-color: rebeccapurple;
+    animation-name: ghumakkad;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* transition-property: all;
+    transition-duration: 1s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-delay: 1s; */
+}
+/* .inner:hover{
+    height: 150px;
+    width: 150px;
+    background-color: lightcoral;
+}
+.inner:active{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+} */
+#first{
+    flex-shrink: 0;
+}
+#second{
+    flex-shrink: 0;
+}
+#change{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (min-width:300px) and (max-width: 400px){
+    #change{
+        background-color: red;
+    }
+}
+
+@keyframes ghumakkad {
+    from{left: 10px;}
+    to{left: 1000px;}
+}
