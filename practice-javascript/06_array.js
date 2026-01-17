@@ -47,3 +47,21 @@ let c = 10;
 
 console.log(Array.of(a, b, c));
 
+for (const num of marvel_heros){
+    console.log(num );
+}
+
+marvel_heros.forEach(function name(val){
+    console.log(val);
+})
+
+marvel_heros.forEach((item) => {
+    console.log(item);
+})
+
+const myNums = [1, 2, 3, 4, 5, 6, 7]
+
+const newNums = myNums.filter((num) => num>4)
+console.log(newNums); //now it is the array which has elements > 4
+const mapped = myNums.map((num) => (num+10));
+console.log(mapped);
